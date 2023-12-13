@@ -1,0 +1,1 @@
+export const WhatsAppUrl = 'https://wa.me/+584244201800?text=Hola%20Necesito%20un%20hosting%20web'
