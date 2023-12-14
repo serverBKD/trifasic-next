@@ -1,29 +1,26 @@
-import CTAForm from '@/components/CTAForm.jsx'
-import FeatureOne from '@/components/FeatureOne.jsx'
-import Footer from '@/components/Footer.jsx'
-import Hero from '@/components/Hero.jsx'
-import NavBar from '@/components/NavBar.jsx'
-import NavBarCart from '@/components/NavBarCart.jsx'
-import Pricing from '@/components/Pricing.jsx'
-import Stat from '@/components/Stat.jsx'
-import TriPack from '@/components/TriPack.jsx'
-import Contents from '@/components/Contents.jsx'
+'use client'
+import { getSession } from 'next-auth/react'
+import { useEffect } from 'react'
+import Link from 'next/link'
 
+ function page() {
 
-export default function Home() {
-	return (
-		<main className="w-full min-h-screen bg-slate-900">
-			<NavBarCart/>
-			<Hero />
-			<NavBar />
-			<FeatureOne />
-			<Contents/>
-			<Pricing/>
-			<TriPack/>
-			<CTAForm />
-			<Stat/>
-			<Footer/>
-		</main>
-	)
+     useEffect( () => {
+        (async() => {
+        const session = await getSession()
+             console.log(session)
+         })()
+    }, [])
+    
+  return (
+      <main className="w-full h-screen bg-sky-900">
+          <section className="w-[720px] h-[720px] bg-slate-400 flex flex-col">
+              <h1>SX241</h1>
+              <Link href={'http://localhost:3000/api/auth/signin'}>SignIn</Link>
+              <Link href={'http://localhost:3000/api/auth/signout'}>SignOut</Link>
+          </section>
+    </main>
+  )
 }
-	
+
+export default page

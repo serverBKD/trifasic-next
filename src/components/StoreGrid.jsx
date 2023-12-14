@@ -17,7 +17,7 @@ const productSec = {
 
 function StoreGrid() {
 	return (
-		<section className="text-gray-400 bg-gray-200 body-font">
+		<section className="text-gray-400 bg-slate-600 body-font">
 			<div className="container px-5 py-24 mx-auto ">
 				<article className="flex flex-wrap -m-4 ">
 					<article className="lg:w-1/4 md:w-1/2 w-full overflow-hidden rounded-lg hover:shadow-2xl">

@@ -10,16 +10,26 @@ export default function page() {
 			<NavBar />
 			<article className="w-full min-h-screen flex justify-center items-center">
 				<form onSubmit={
-					async () => {
-						const response = await fetch('api/upload', {
-							method:'POST'
+					async (e) => {
+						e.preventDefault()
+
+						const formData = new FormData()
+						formData.append('file',file)
+
+						const response = await fetch('/api/upload', {
+							method: 'POST',
+							headers: {
+								"Allow": "POST",
+								"Content-Type": 'multipart/form-data'
+							},
+							body: formData,
 						})
 						const data = await response.json()
 						console.log(data)
 					}
 				}
 				>
-					<input type="file" name="upload" id="upload" onChange={(e) => console.log(e.target.files[ 0 ])} />
+					<input type="file" name="upload" id="upload" onChange={(e) => setFile(e.target.files[ 0 ])} />
 					<button>upload</button>
 				</form>
 			</article>
