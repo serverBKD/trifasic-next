@@ -1,4 +1,5 @@
-import { NextRequest,NextResponse } from 'next/server'
+import { NextRequest, NextResponse } from 'next/server'
+import { SubirFiles } from '@/config/firebase.config.js'
 import { writeFile } from 'fs/promises'
 import path from 'path'
 
@@ -21,7 +22,8 @@ export async function POST(request) {
 	//. Guardar archivo en Carpeta Public
 	const imagePath = `${new Date().getTime()}-x-${image.name}`
 	const filePath = path.join(process.cwd(),'public','uploads',imagePath)
-	await writeFile(filePath,buffer)
+	await writeFile(filePath, buffer)
+	SubirFiles(buffer)
 
 	return NextResponse.json({'message': image})
 }
