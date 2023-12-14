@@ -23,7 +23,9 @@ export async function POST(request) {
 	const imagePath = `${new Date().getTime()}-x-${image.name}`
 	const filePath = path.join(process.cwd(),'public','uploads',imagePath)
 	await writeFile(filePath, buffer)
-	SubirFiles(buffer)
+	
+	//. Subir al Bucket Firebase
+	const imageURL = SubirFiles(buffer,image.name)
 
-	return NextResponse.json({'message': image})
+	return NextResponse.json({'message': imageURL})
 }

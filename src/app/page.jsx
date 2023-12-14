@@ -13,9 +13,9 @@ import Contents from '@/components/Contents.jsx'
 export default function Home() {
 	return (
 		<main className="w-full min-h-screen bg-slate-900">
-			<NavBarCart/>
-			<Hero />
 			<NavBar />
+			<Hero />
+			<NavBarCart/>
 			<FeatureOne />
 			<Contents/>
 			<Pricing/>
