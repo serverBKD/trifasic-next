@@ -1,17 +1,15 @@
 
 export default class ProductSec {
-  constructor(serial, model, trademark, description, price_sell, stock, tags, images, price_sell) {
+  constructor(serial, model, trademark,fullname, description, price_sell, stock, tags, images) {
     this.serial = serial
     this.model = model
     this.trademark = trademark
     this.fullname= fullname
     this.description= description
-    this.trademark = trademark
-    this.model = model
-    this.tags= tags
-    this.images= images
     this.price_sell = price_sell
     this.stock = stock
+    this.tags = tags
+    this.images= images
   }
 }
 
@@ -32,14 +30,3 @@ export class storageProductSec extends ProductSec{
   
 
 }
-
-const CCTV = new ProductSec('CCTV','Algo mas','panasonic','HsPSn1154',['cctv_in','bulgaries'],'https',25.3)
-
-console.log(CCTV)
-
-const CCTV4CH = new storageProductSec('CCTV','Algo mas','panasonic','HsPSn1154',['cctv_in','bulgaries'],'https',253,'general',202,1500,'USD','SKU_ssss','BC:ssaa','HNDJBSdxaSDskjsj',15154,'151','14,xxs')
-
-console.log(CCTV4CH)
-
-const bytes = await arrayBuffer('msjls')
-const buffer = await Buffer.from(bytes)
