@@ -1,5 +1,6 @@
 import Link from 'next/link'
 import { WhatsAppUrl } from '../config/config.m.js'
+
 export default function NavBar() {
 	return (
 		<section className="navbar bg-base-900 max-h-7 px-32">
@@ -25,6 +26,7 @@ export default function NavBar() {
 			<div className="navbar-center hidden lg:flex">
 				<ul className="menu menu-horizontal px-1">
 					<li><Link href={'/store'}>Tienda</Link></li>
+					<li><Link href={'/proforma'}>Combos CCTV</Link></li>
 					<li><Link href={'/sec'}>Seguridad Electrónica</Link></li>
 					<li><Link href={'/erp'}>Sistemas de Facturación</Link></li>
 					<li><Link href={'/network'}>Redes / Informática</Link></li>
