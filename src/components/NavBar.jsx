@@ -2,7 +2,7 @@ import Link from 'next/link'
 import { WhatsAppUrl } from '../config/config.m.js'
 export default function NavBar() {
 	return (
-		<section className="navbar bg-base-100 max-h-7 px-32">
+		<section className="navbar bg-base-900 max-h-7 px-32">
 			<div className="navbar-start">
 				<div className="dropdown">
 					<div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
@@ -20,7 +20,7 @@ export default function NavBar() {
 						<li><a>Seguridad Electrónica: CCTV</a></li>
 					</ul>
 				</div>
-				<Link href={'/'} className="btn btn-ghost text-xl">server/[241]</Link>
+				<Link href={'/'} className="btn btn-ghost text-xl bg-[#EFCA08] text-base-300">server/[241]</Link>
 			</div>
 			<div className="navbar-center hidden lg:flex">
 				<ul className="menu menu-horizontal px-1">
@@ -32,7 +32,7 @@ export default function NavBar() {
 				</ul>
 			</div>
 			<div className="navbar-end">
-				<Link href={WhatsAppUrl} className="btn">WhatsApp</Link>
+				<Link href={WhatsAppUrl} className="btn bg-[#EFCA08]  text-base-300 tracking-wider hover:bg-[#25D366] hover:text-base-200 hover:shadow-md hover:shadow-slate-500 ">WhatsApp</Link>
 			</div>
 		</section>
 	)
