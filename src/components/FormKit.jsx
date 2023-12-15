@@ -1,29 +1,14 @@
 "use client";
-import { useState } from "react";
+import { useForm } from "react";
 import TableKit from "@/components/TableKit";
 
 export default function FormKit() {
-  const [NumKit, setNumKit] = useState(4);
-  const [TradeMark, setTradeMark] = useState("hikvision");
-  const [Storage, setStorage] = useState("500GB");
-  const [Power, setPower] = useState("unit");
-  const [ Wire, setWire ] = useState("50");
-  const [QueryOpt,setQueryOpt] = useState({})
   return (
     <section>
       <form
         className="my-3 px-2 py-1 bg-slate-700"
         onSubmit={(e) => {
           e.preventDefault();
-          const __QueryOpt = {
-            numkit: `${NumKit}`,
-            TradeMark: `${TradeMark}`,
-            Power: `${Power}`,
-            Storage: `${Storage}`,
-            Wire: `${Wire}`,
-          };
-          setQueryOpt(__QueryOpt)
-          console.log(QueryOpt);
         }}
       >
         <div>
@@ -93,7 +78,7 @@ export default function FormKit() {
           </div>
         </div>
       </form>
-      <TableKit QueryOpt={QueryOpt}/>
+      <TableKit QueryOpt={2} />
     </section>
   );
 }

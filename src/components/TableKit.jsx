@@ -1,9 +1,9 @@
 import Image from "next/image";
-import ProductSec from "@/lib/ProductSeg.d"
+import ProductSec from "@/lib/ProductSeg.d";
 
-export default function TableKit({QueryOpt}) {
-  console.log('de este lado',QueryOpt)
-  const NUMBER_CAM = 16
+export default function TableKit({ QueryOpt }) {
+  console.log("de este lado", QueryOpt);
+  const NUMBER_CAM = 16;
   const CAM = new ProductSec(
     "DS-2CE16C0T-IRPF",
     "BKD-2CE16C0T-IRPF",
@@ -19,11 +19,11 @@ export default function TableKit({QueryOpt}) {
     <table className="w-[840px] my-3 px-3">
       <thead>
         <tr className="grid grid-flow-col gap-1 grid-cols-7 bg-slate-900">
-          <td>NumKit: `{QueryOpt.numkit}`</td>
-          <td>TradeMark</td>
-          <td>Power</td>
-          <td>Storage</td>
-          <td>Wire</td>
+          <td>NumKit: {QueryOpt}</td>
+          <td>TradeMark: {QueryOpt}</td>
+          <td>Power: {QueryOpt}</td>
+          <td>Storage:{QueryOpt}</td>
+          <td>Wire:{QueryOpt.Wire}</td>
         </tr>
         <tr className="grid grid-flow-col gap-1 grid-cols-7 bg-slate-900">
           <td>Modelo</td>
