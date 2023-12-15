@@ -1,17 +1,19 @@
 'use client'
-import { useForm } from 'react'
+import { useForm } from 'react-hook-form'
 import TableKit from '@/components/TableKit'
 
 export default function FormKit() {
-	const { register, handleSubmit } = useForm()
+	const {
+		register,
+		handleSubmit,
+		formState: { errors },
+	} = useForm()
+	const onSubmit = handleSubmit((data) => {
+		console.log(data)
+	})
 	return (
 		<section>
-			<form
-				className='my-3 px-2 py-1 bg-slate-700'
-				onSubmit={handleSubmit((data) => {
-					console.log(data)
-				})}
-			>
+			<form className='my-3 px-2 py-1 bg-slate-700' onSubmit={onSubmit}>
 				<div>
 					<div className='flex gap-3 justify-around'>
 						<div className='flex flex-col gap-y-2'>
@@ -23,16 +25,20 @@ export default function FormKit() {
 								min={0}
 								max={32}
 								step={1}
-								placeholder={8}
-								onChange={(e) => setNumKit(e.target.value)}
+								placeholder={4}
+								{...register('numKit', {
+									required: true,
+								})}
 							/>
+							{(errors.numKit || register.numKit <= 0) && (
+								<span className='text-red-400 text-sm'>
+									¿Cuantas Camaras necesitas?
+								</span>
+							)}
 						</div>
 						<div className='flex flex-col gap-y-2'>
-							<label htmlFor='marca'>Marca</label>
-							<select
-								id='marca'
-								onChange={(e) => setTradeMark(e.target.value)}
-							>
+							<label htmlFor='TradeMark'>TradeMark</label>
+							<select id='TradeMark' {...register('TradeMark')}>
 								<optgroup>
 									<option value='hikvision'>HikVision</option>
 									<option value='dahua'>Dahua</option>
@@ -42,11 +48,8 @@ export default function FormKit() {
 							</select>
 						</div>
 						<div className='flex flex-col gap-y-2'>
-							<label htmlFor='DD'>Almacenamiento</label>
-							<select
-								id='DD'
-								onChange={(e) => setStorage(e.target.value)}
-							>
+							<label htmlFor='Storage'>Almacenamiento</label>
+							<select id='Storage' {...register('Storage')}>
 								<optgroup>
 									<option value='500GB'>500GB</option>
 									<option value='1TB'>1TB</option>
@@ -57,10 +60,7 @@ export default function FormKit() {
 						</div>
 						<div className='flex flex-col gap-y-2'>
 							<label htmlFor='Power'>Fuente de Poder</label>
-							<select
-								id='Power'
-								onChange={(e) => setPower(e.target.value)}
-							>
+							<select id='Power' {...register('Power')}>
 								<optgroup>
 									<option value='unit'>Individual</option>
 									<option value='central'>
@@ -70,11 +70,8 @@ export default function FormKit() {
 							</select>
 						</div>
 						<div className='flex flex-col gap-y-2'>
-							<label htmlFor='wire'>Cableado</label>
-							<select
-								id='wire'
-								onChange={(e) => setWire(e.target.value)}
-							>
+							<label htmlFor='Wire'>Cableado</label>
+							<select id='Wire' {...register('Wire')}>
 								<optgroup>
 									<option value='50'>50 mts</option>
 									<option value='100'>100 mts</option>
@@ -93,7 +90,9 @@ export default function FormKit() {
 					</div>
 				</div>
 			</form>
-			<TableKit QueryOpt={2} />
+			{register.numKit === 'undefined' ?? (
+				<TableKit QueryOpt={register.numKit} />
+			)}
 		</section>
 	)
 }
