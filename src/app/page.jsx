@@ -6,24 +6,20 @@ import NavBar from '@/components/NavBar.jsx'
 import NavBarCart from '@/components/NavBarCart.jsx'
 import Pricing from '@/components/Pricing.jsx'
 import Stat from '@/components/Stat.jsx'
-import TriPack from '@/components/TriPack.jsx'
 import Contents from '@/components/Contents.jsx'
-
 
 export default function Home() {
 	return (
-		<main className="w-full min-h-screen bg-slate-900">
+		<main className='w-full min-h-screen bg-slate-900'>
 			<NavBar />
 			<Hero />
-			<NavBarCart/>
+			<NavBarCart />
 			<FeatureOne />
-			<Contents/>
-			<Pricing/>
-			<TriPack/>
+			<Contents />
+			<Pricing />
+			<Stat />
 			<CTAForm />
-			<Stat/>
-			<Footer/>
+			<Footer />
 		</main>
 	)
 }
-	
