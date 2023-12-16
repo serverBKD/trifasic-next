@@ -7,9 +7,20 @@ export default function FormKit() {
 		register,
 		handleSubmit,
 		formState: { errors },
-	} = useForm()
+		watch,
+		reset,
+	} = useForm({
+		defaultValues: {
+			numKit: 4,
+			TradeMark: 'hikvision',
+			Power: 'unit',
+			Storage: '500GB',
+			Wire: '50',
+		},
+	})
 	const onSubmit = handleSubmit((data) => {
 		console.log(data)
+		reset()
 	})
 	return (
 		<section>
@@ -23,16 +34,31 @@ export default function FormKit() {
 								name='numKit'
 								id='numKit'
 								min={0}
-								max={32}
 								step={1}
 								placeholder={4}
 								{...register('numKit', {
-									required: true,
+									required: {
+										value: true,
+										message: '¿Cuántas cámaras necesitas?',
+									},
+									validate: (value) => {
+										if (value >= 32) {
+											console.log('Hasta 32CH')
+										} else {
+											return true
+										}
+									},
+									min: {
+										value: 0,
+										message: '0 es lo minimo',
+									},
 								})}
 							/>
-							{(errors.numKit || register.numKit <= 0) && (
+							{(errors.numKit ||
+								register.numKit <= 0 ||
+								errors.numKit?.value < 0) && (
 								<span className='text-red-400 text-sm'>
-									¿Cuantas Camaras necesitas?
+									{errors.numKit.message}
 								</span>
 							)}
 						</div>
@@ -90,9 +116,11 @@ export default function FormKit() {
 					</div>
 				</div>
 			</form>
-			{register.numKit === 'undefined' ?? (
-				<TableKit QueryOpt={register.numKit} />
-			)}
+			<pre className='transition ease-in-out duration-700'>
+				{watch('numKit') !== 0 && !errors.numKit && (
+					<TableKit QueryOpt={register} />
+				)}
+			</pre>
 		</section>
 	)
 }

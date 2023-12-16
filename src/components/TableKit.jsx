@@ -2,7 +2,7 @@ import Image from 'next/image'
 import ProductSec from '@/lib/ProductSeg.d'
 
 export default function TableKit({ QueryOpt }) {
-	console.log('de este lado', QueryOpt)
+	console.log('este lado:', QueryOpt.name)
 	const NUMBER_CAM = 16
 	const CAM = new ProductSec(
 		'DS-2CE16C0T-IRPF',
@@ -17,14 +17,7 @@ export default function TableKit({ QueryOpt }) {
 	)
 	return (
 		<table className='w-[840px] my-3 px-3'>
-			<thead>
-				<tr className='grid grid-flow-col gap-1 grid-cols-7 bg-slate-900  px-3'>
-					<td>NumKit: {QueryOpt}</td>
-					<td>TradeMark: {QueryOpt}</td>
-					<td>Power: {QueryOpt}</td>
-					<td>Storage:{QueryOpt}</td>
-					<td>Wire:{QueryOpt}</td>
-				</tr>
+			<thead className='border border-slate-700'>
 				<tr className='grid grid-flow-col gap-1 grid-cols-7 bg-slate-900  px-3'>
 					<td>Modelo</td>
 					<td>Marca</td>
