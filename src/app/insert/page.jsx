@@ -98,7 +98,7 @@ export default function page() {
 							/>
 						</div>
 					</div>
-					{/* <!-- Row 4 Stock + Unity + Warehouse +Category --> */}
+					{/* <!-- Row 4 Stock + Unity + Warehouse + Category + Dimension + Weigth--> */}
 					<div className='flex flex-col md:flex-row gap-2'>
 						<div className='flex flex-col gap-y-3'>
 							<label htmlFor='stock'>Stock Inventory</label>
@@ -127,6 +127,18 @@ export default function page() {
 						<div className='flex flex-col gap-y-3'>
 							<label htmlFor='tags'>Category</label>
 							<input type='text' name='tags' id='tags' />
+						</div>
+						<div className='flex flex-col gap-y-3'>
+							<label htmlFor='dimension'>Dimension</label>
+							<input
+								type='text'
+								name='dimension'
+								id='dimension'
+							/>
+						</div>
+						<div className='flex flex-col gap-y-3'>
+							<label htmlFor='weigth'>Weigth</label>
+							<input type='text' name='weigth' id='dimension' />
 						</div>
 					</div>
 					{/* <!-- Row 5 Serial + Barcode + SKU + Tags --> */}
