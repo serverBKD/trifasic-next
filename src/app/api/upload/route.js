@@ -25,7 +25,8 @@ export async function POST(request) {
 	await writeFile(filePath, buffer)
 	
 	//. Subir al Bucket Firebase
-	const imageURL = SubirFiles(buffer,image.name)
+	const imageURL = await SubirFiles(buffer, image.name)
+	console.log(imageURL)
 
-	return NextResponse.json({'message': imageURL})
+	return new NextResponse.json(JSON.stringify({message: imageURL}))
 }
