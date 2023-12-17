@@ -2,7 +2,8 @@ import Image from 'next/image'
 import ProductSec from '@/lib/ProductSeg.d'
 
 export default function TableKit({ QueryOpt }) {
-	console.log('este lado:', QueryOpt.name)
+	const data = JSON.parse(QueryOpt)
+	console.log('Table:', data.numKit)
 	const NUMBER_CAM = 16
 	const CAM = new ProductSec(
 		'DS-2CE16C0T-IRPF',

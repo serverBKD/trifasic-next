@@ -1,8 +1,10 @@
 'use client'
 import { useForm } from 'react-hook-form'
+import { useState } from 'react'
 import TableKit from '@/components/TableKit'
 
 export default function FormKit() {
+	const [Table, setTable] = useState(null)
 	const {
 		register,
 		handleSubmit,
@@ -11,7 +13,7 @@ export default function FormKit() {
 		reset,
 	} = useForm({
 		defaultValues: {
-			numKit: 4,
+			numKit: 0,
 			TradeMark: 'hikvision',
 			Power: 'unit',
 			Storage: '500GB',
@@ -20,7 +22,9 @@ export default function FormKit() {
 	})
 	const onSubmit = handleSubmit((data) => {
 		console.log(data)
-		reset()
+		setTable(JSON.stringify(data))
+		console.log(Table)
+		// reset()
 	})
 	return (
 		<section>
@@ -54,9 +58,7 @@ export default function FormKit() {
 									},
 								})}
 							/>
-							{(errors.numKit ||
-								register.numKit <= 0 ||
-								errors.numKit?.value < 0) && (
+							{errors.numKit && (
 								<span className='text-red-400 text-sm'>
 									{errors.numKit.message}
 								</span>
@@ -117,9 +119,7 @@ export default function FormKit() {
 				</div>
 			</form>
 			<pre className='transition ease-in-out duration-700'>
-				{watch('numKit') !== 0 && !errors.numKit && (
-					<TableKit QueryOpt={register} />
-				)}
+				{watch('numKit') > 0 && <TableKit QueryOpt={Table} />}
 			</pre>
 		</section>
 	)

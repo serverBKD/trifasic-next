@@ -1,4 +1,4 @@
-import { NextRequest, NextResponse } from 'next/server'
+import { NextResponse } from 'next/server'
 import { SubirFiles } from '@/config/firebase.config.js'
 import { writeFile } from 'fs/promises'
 import path from 'path'

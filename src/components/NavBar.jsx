@@ -51,7 +51,7 @@ export default function NavBar() {
 				</div>
 				<Link
 					href={'/'}
-					className='btn btn-ghost text-2xl bg-[#EFCA08] text-[#0086C2]'
+					className='btn text-2xl bg-[#EFCA08] text-[#0086C2] hover:text-[#EFCA08] hover:bg-[#0086C2]'
 				>
 					server/[241]
 				</Link>
@@ -59,26 +59,51 @@ export default function NavBar() {
 			<div className='navbar-center hidden lg:flex'>
 				<ul className='menu menu-horizontal px-1'>
 					<li>
-						<Link href={'/store'}>Tienda</Link>
+						<Link
+							href={'/store'}
+							className='hover:bg-[#EFCA08] hover:text-[#0086C2]'
+						>
+							Tienda
+						</Link>
 					</li>
 					<li>
-						<Link href={'/proforma'}>Combos CCTV</Link>
+						<Link
+							href={'/proforma'}
+							className='hover:bg-[#EFCA08] hover:text-[#0086C2]'
+						>
+							Combos CCTV
+						</Link>
 					</li>
 					<li>
-						<Link href={'/sec'}>Seguridad Electrónica</Link>
+						<Link
+							href={'/sec'}
+							className='hover:bg-[#EFCA08] hover:text-[#0086C2]'
+						>
+							Seguridad Electrónica
+						</Link>
 					</li>
 					<li>
-						<Link href={'/erp'}>Sistemas de Facturación</Link>
+						<Link
+							href={'/erp'}
+							className='hover:bg-[#EFCA08] hover:text-[#0086C2]'
+						>
+							Sistemas de Facturación
+						</Link>
 					</li>
 					<li>
-						<Link href={'/contacto'}>Contacto</Link>
+						<Link
+							href={'/contacto'}
+							className='ml-2 bg-[#EFCA08] text-[#0086C2] hover:text-[#EFCA08] hover:bg-[#0086C2]'
+						>
+							Contacto
+						</Link>
 					</li>
 				</ul>
 			</div>
 			<div className='navbar-end'>
 				<Link
 					href={WhatsAppUrl}
-					className='btn bg-[#EFCA08]  text-base-300 tracking-wider hover:bg-[#25D366] hover:text-base-200 hover:shadow-md hover:shadow-slate-500 '
+					className='btn bg-[#EFCA08] text-base-300 tracking-wider hover:bg-[#25D366] hover:text-base-200 hover:shadow-md hover:shadow-slate-500 '
 				>
 					WhatsApp
 				</Link>

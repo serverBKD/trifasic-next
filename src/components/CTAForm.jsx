@@ -52,6 +52,7 @@ export default function CTAForm() {
 									message: 'Introduzca su Nombre y Apellido',
 								},
 								min: 4,
+								maxLength: 30,
 							})}
 						/>
 						{errors.fullname && (
@@ -73,9 +74,13 @@ export default function CTAForm() {
 							{...register('email', {
 								required: {
 									value: true,
-									message: 'email no válido',
+									message: 'enter an email',
 								},
-								pattern: 'xxxx@gmail.com',
+								pattern: {
+									value: '^[w-.]+@([w-]+.)+[w-]{2,4}$',
+									message: 'email incorrect',
+								},
+								maxLength: 30,
 							})}
 						/>
 						{errors.email && <span>{errors.email?.message}</span>}
@@ -97,7 +102,17 @@ export default function CTAForm() {
 									value: true,
 									message: 'introduce un número de contacto',
 								},
-								pattern: '04xx-xxxxxxx',
+								pattern: {
+									value: '^(?:(?:00|+)58|0)(?:2(?:12|4[0-9]|5[1-9]|6[0-9]|7[0-8]|8[1-35-8]|9[1-5]|3[45789])|4(?:1[246]|2[46]))d{7}$',
+									message:
+										'introduce un número de contacto válido',
+								},
+								min: {
+									value: 11,
+									message:
+										'introduce un número de contacto válido',
+								},
+								maxLength: 16,
 							})}
 						/>
 						{errors.tel && <span>{errors.tel?.message}</span>}
