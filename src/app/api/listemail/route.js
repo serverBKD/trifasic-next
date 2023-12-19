@@ -6,7 +6,26 @@ export async function GET() {
 	return NextResponse.json({'message': query})
 }
 
-export function POST() {
-    
-	return NextResponse.json({'message':'uploading files...'})
+export async function POST(req,res) {
+	try {
+		const {
+			fullname,
+			formName,
+			email,
+			tel
+		}= await req.json()
+		const newLeak = await prisma.listEmail.create({
+			data: {
+				fullname,
+				formName,
+				email,
+				tel
+			}
+		})
+		if (!newLeak) return res.status(400).json({ 'message': 'error' })
+		console.log(newLeak)
+	} catch (error) {
+		console.log(error)
+	}
+	return NextResponse.json({'message':'registro creado'})
 }

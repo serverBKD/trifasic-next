@@ -18,8 +18,7 @@ export default function FormKit() {
 		watch,
 		setValue,
 	} = useForm()
-	const onSubmit = handleSubmit((data) => {
-		setValue('ForName', 'FormKit')
+	const onSubmit = handleSubmit(async (data) => {
 		setTable(data)
 	})
 	return (

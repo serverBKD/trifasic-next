@@ -1,18 +1,21 @@
 'use client'
 import NavBar from '@/components/NavBar.jsx'
+import { fetchEmail } from '@/lib/fetchAPI'
 import { useForm } from 'react-hook-form'
 export default function page() {
 	const {
 		register,
 		handleSubmit,
-		watch,
+		// setValue,
 		formState: { errors },
-		setValue,
 	} = useForm()
-	const onSubmit = handleSubmit((data) => {
-		setValue('formName', 'ContactoForm')
-		console.log(data)
+	const onSubmit = handleSubmit(async (data) => {
+		// setValue('formName', 'ContactoForm')
+		const _data = { ...data, formName: 'ContactoForm' }
+		const resp = await fetchEmail(_data, '/api/listemail')
+		console.log(resp)
 	})
+
 	return (
 		<section className='max-h-screen'>
 			<NavBar />
