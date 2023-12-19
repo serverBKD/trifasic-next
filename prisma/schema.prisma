@@ -22,13 +22,14 @@ model ListEmail {
 }
 
 model Product {
-  id          String    @id @unique 
-  fullname    String
-  description String?
+  id          Int    @id @unique@default(autoincrement())
+  fullname    String?
+  description String
   trademark   String?   @default("bkd")
   model       String?
   img         String?
-  warehouse   Int       @default(0)
+  warehouse   String   @default("general")
+  category    String? 
   price_sell  Float     @default(0)
   price_base  Float     @default(0)
   divisa      String
