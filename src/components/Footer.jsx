@@ -1,17 +1,18 @@
 'use client'
 import Link from 'next/link'
 import { useForm } from 'react-hook-form'
+import { fetchEmail } from '@/services/fetchAPI.service'
 
 export default function Footer() {
 	const {
 		register,
 		handleSubmit,
 		formState: { errors },
-		setValue,
 	} = useForm()
-	const onSubmit = handleSubmit((data) => {
-		setValue('formName', 'listEmail')
-		console.log(data)
+	const onSubmit = handleSubmit(async (data) => {
+		const _data = { ...data, formName: 'CTAForm' }
+		const resp = await fetchEmail(_data, '/api/listemail')
+		console.log(resp)
 	})
 	return (
 		<footer className='text-gray-400 bg-gray-900 body-font'>

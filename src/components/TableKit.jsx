@@ -41,7 +41,7 @@ export default function TableKit({ _data }) {
 					<td>{Storage}</td>
 					<td>
 						<Image
-							src={`/productsSec/DSC/PC9155-removebg-preview.png`}
+							src={'/productsSec/DSC/PC9155-removebg-preview.png'}
 							alt=''
 							width={60}
 							height={60}
