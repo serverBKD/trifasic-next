@@ -8,17 +8,25 @@ export default function NavBarCart() {
 				<div className='flex-1'>
 					<Link
 						href='/'
-						className='btn btn-ghost text-2xl font-extrabold bg-[#EFCA08] text-[#0086C2]'
+						className='btn btn-ghost text-2xl font-extrabold bg-[#EFCA08] text-[#0086C2] hover:text-[#EFCA08] hover:bg-[#0086C2]'
 					>
-						server/[241]
+						nodo3{/* server/[241] */}
+					</Link>
+				</div>
+				<div>
+					<Link
+						href={'/api/auth/signin'}
+						className='btn mx-1 px-3 bg-[#EFCA0A] text-[#0086C2] hover:text-[#EFCA0A] hover:bg-[#0086C3]'
+					>
+						SignIn
 					</Link>
 				</div>
 				<div className='flex-none'>
-					<div className='dropdown dropdown-end'>
+					<div className='dropdown dropdown-end flex items-center gap-3'>
 						<div
 							tabIndex={0}
 							role='button'
-							className='btn btn-ghost btn-circle bg-[#EFCA08AA]'
+							className='btn btn-circle bg-[#EFCA0ADA] hover:text-[#EFCA08] hover:bg-[#0086C2] hover:text-[#EFCA0ADA]'
 						>
 							<div className='indicator'>
 								<svg
@@ -71,7 +79,7 @@ export default function NavBarCart() {
 									alt='Tailwind CSS Navbar component'
 									width={100}
 									height={100}
-									className='w-5 h-5 rounded-full outline-4 outline-slate-300'
+									className='w-6 h-6 rounded-full outline-7 outline-[#EFCA0A]'
 								/>
 							</div>
 						</div>

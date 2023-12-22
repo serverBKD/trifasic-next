@@ -1,6 +1,6 @@
 export default function Stat() {
 	return (
-		<section className='w-full h-auto py-3 bg-slate-600 grid place-items-center'>
+		<section className='w-full h-auto py-3 bg-slate-600 grid place-items-center overflow-hidden'>
 			<div className='stats shadow '>
 				<div className='stat'>
 					<div className='stat-figure text-secondary'>

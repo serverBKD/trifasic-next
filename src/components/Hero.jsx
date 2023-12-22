@@ -2,9 +2,9 @@ import Image from 'next/image'
 
 export default function Hero() {
 	return (
-		<section className='text-gray-400 bg-gray-900 body-font w-full min-h-screen bg-gradient-to-r from-slate-700 to-slate-500'>
-			<div className='min-w-full min-h-screen flex flex-col lg:flex-row items-center justify-center overflow-hidden px-5'>
-				<div className='lg:max-w-lg lg:w-full md:w-1/2 w-5/6 md:mb-0 mb-10'>
+		<section className='text-gray-400 bg-gray-900 body-font bg-gradient-to-r from-slate-700 to-slate-500'>
+			<div className='w-full min-w-[480px] min-h-screen flex flex-col lg:flex-row items-center justify-center overflow-hidden px-5'>
+				<div className='lg:max-w-lg lg:w-full md:w-1/2 w-5/6 md:mb-0 mb-10 bg-sky-500'>
 					<Image
 						src={'/heroServer241.jpg'}
 						alt='hero'

@@ -1,6 +1,6 @@
 'use client'
 import { useForm } from 'react-hook-form'
-import { fetchEmail } from '@/lib/fetchAPI'
+import { fetchEmail } from '@/services/fetchAPI.service'
 
 export default function CTAForm() {
 	const {
@@ -119,7 +119,7 @@ export default function CTAForm() {
 						/>
 						{errors.tel && <span>{errors.tel?.message}</span>}
 					</div>
-					<button className='bg-[#0086C3] text-[#EFCA0A] border-0 py-2 px-8 focus:outline-none hover:bg-indigo-600 rounded text-lg'>
+					<button className='bg-[#0086C3] text-[#EFCA0A] border-0 py-2 px-8 focus:outline-none hover:bg-[#EFCA0A] hover:text-[#0086C3] rounded text-lg'>
 						Enviar Info
 					</button>
 					<p className='text-xs mt-3'>

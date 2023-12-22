@@ -1,6 +1,6 @@
 'use client'
 import NavBar from '@/components/NavBar.jsx'
-import { fetchEmail } from '@/lib/fetchAPI'
+import { fetchEmail } from '@/services/fetchAPI.service'
 import { useForm } from 'react-hook-form'
 export default function page() {
 	const {
