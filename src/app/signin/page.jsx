@@ -1,6 +1,7 @@
 'use client'
 
 import { useState } from 'react'
+import { fecthData } from '@/services/fetchAPI.service.js'
 
 export default function login() {
 	const [credential, setCredential] = useState({
@@ -16,17 +17,18 @@ export default function login() {
 	}
 	const handleSubmit = async (e) => {
 		e.preventDefault()
-		const response = await fetch('api/login', {
-			method: 'POST',
-			data: credential,
-		})
-		console.log(response)
+
+		const response = await fecthData(credential, 'api/login', 'POST')
+		const data = await response.json()
+		console.log(data)
 	}
 
 	return (
 		<section className='w-full min-h-screen bg-slate-900 grid place-content-center'>
 			<form onSubmit={handleSubmit} className='py-1 px-3 bg-slate-700'>
-				<h1>Login</h1>
+				<h1 className='w-full text-center text-[#0086C3] bg-[#EFCA0A]'>
+					Login
+				</h1>
 				<div className='flex justify-between gap-x-3 my-2'>
 					<label htmlFor='email'>Email</label>
 					<input
