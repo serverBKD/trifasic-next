@@ -1,0 +1,19 @@
+POST http://localhost:3000/api/listemail HTTP/1.1
+content-type: application/json
+
+{
+    "formName": "sample",
+    "fullname": "Santa Navidad",
+    "email": "email2@alaskaofnight.alk",
+    "tel": "+166624x122023"
+}
+
+# model ListEmail {
+#   id          Int          @id @default(autoincrement()) 
+#   formName    String
+#   fullname    String?
+#   email       String      @unique
+#   tel         String?
+#   createdAt   DateTime    @default(now())
+#   updatedAt   DateTime    @updatedAt
+# }

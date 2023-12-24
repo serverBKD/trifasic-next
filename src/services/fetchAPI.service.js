@@ -1,15 +1,11 @@
-export async function fecthData(_DATA,URL,METHOD) {
+export async function fecthData(_DATA,URL) {
 	try {
-		console.log(_DATA)
-		console.log(URL)
-		console.log(METHOD)
-		console.log(JSON.stringify(_DATA))
-		
-		// const data = await fetch(URL, {
-		// 	method: `${METHOD}`,
-		// 	body: JSON.stringify(_DATA),
-		// })
-		return _DATA.json()
+		const data = await fetch(URL, {
+			method: 'POST',
+			headers:{'content-type': 'application/json; charset=UTF-8'},
+			body: JSON.stringify(_DATA),
+		})
+		return data
 	} catch (error) {
 		console.log(error.message)
 	}

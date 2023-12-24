@@ -1,0 +1,24 @@
+POST http://localhost:3000/api/products HTTP/1.1
+content-type: application/json
+
+{
+    "fullname": "XDRV 8CHsx",
+    "description": "mucha X-Http-Method-Override: ",
+    "trademark": "BKD",
+    "model": "HK-2023-12-24",
+    "img": "https://firebase.img.com/muchaimagen.png",
+    "warehouse": "CCTV",
+    "category": "CCTV",
+    "price_sell": 250,
+    "price_base": 120,
+    "divisa": "USD",
+    "stock": 123,
+    "unity": "dozen",
+    "serial": "cxcxsssxxxd",
+    "barcode": "x456s5xsaxxc4d",
+    "sku": "cdd25d-ass-c1c",
+    "weigth": ".5kgs",
+    "dimension": "15x251x220",
+    "nota": "si no tiene nada bueno que decir",
+    "tags": "CCTV-TECH"
+}

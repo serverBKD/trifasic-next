@@ -1,10 +1,11 @@
-/* eslint-disable no-unused-vars */
-import { NextRequest, NextResponse } from 'next/server'
+import { NextResponse } from 'next/server'
 
-export async function POST(req, res) {
-	console.log(req.body)
-	// return response.json({'message': 'query'})
-	// return response.json({'message':'Product created'})
-	return new Response.json({'message':'Product created'})
+export async function GET(NextRequest, NextResponse) {
+	return NextResponse.json({'message':'hola'})
+}
 
+export async function POST(NextRequest, NextResponse) {
+	const { body } = await NextRequest.json()
+	console.log(body)
+	return NextResponse.json({'message':'ahora si bb'})
 }

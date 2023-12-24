@@ -18,9 +18,9 @@ export default function login() {
 	const handleSubmit = async (e) => {
 		e.preventDefault()
 
-		const response = await fecthData(credential, 'api/login', 'POST')
-		const data = await response.json()
-		console.log(data)
+		const response = await fecthData(credential, 'api/login')
+		const _data = await response
+		console.log(_data)
 	}
 
 	return (

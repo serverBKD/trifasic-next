@@ -56,5 +56,5 @@ export async function POST(NextRequest,response) {
 	if (!newProduct) return
     
 	console.log(newProduct)
-	return response.json({'message':'Product created'})
+	return NextResponse.json({'message':'Product created'})
 }
