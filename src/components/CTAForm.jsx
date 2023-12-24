@@ -1,6 +1,6 @@
 'use client'
 import { useForm } from 'react-hook-form'
-import { fetchEmail } from '@/services/fetchAPI.service'
+import { fecthData } from '@/services/fetchAPI.service'
 
 export default function CTAForm() {
 	const {
@@ -11,7 +11,7 @@ export default function CTAForm() {
 
 	const onSubmit = handleSubmit(async (data) => {
 		const _data = { ...data, formName: 'CTAForm' }
-		const resp = await fetchEmail(_data, '/api/listemail')
+		const resp = await fecthData(_data, '/api/listemail')
 		console.log(resp)
 	})
 

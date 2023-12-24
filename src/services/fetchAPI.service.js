@@ -1,12 +1,15 @@
-
-export async function fetchEmail(data,URL) {
+export async function fecthData(_DATA,URL,METHOD) {
 	try {
-		const newleak = await fetch(URL, {
-			method: 'POST',
-			body: JSON.stringify(data),
-		})
-		console.log('created:', newleak)
-		return newleak.json()
+		console.log(_DATA)
+		console.log(URL)
+		console.log(METHOD)
+		console.log(JSON.stringify(_DATA))
+		
+		// const data = await fetch(URL, {
+		// 	method: `${METHOD}`,
+		// 	body: JSON.stringify(_DATA),
+		// })
+		return _DATA.json()
 	} catch (error) {
 		console.log(error.message)
 	}
