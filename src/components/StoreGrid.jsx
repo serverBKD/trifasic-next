@@ -62,7 +62,7 @@ export default function StoreGrid() {
 					>
 						<Image
 							src={productSec[0].image}
-							alt='ecommerce: server/[241]'
+							alt='ecommerce: trifasicxtore'
 							width={1080}
 							height={540}
 							className='object-cover transition delay-75 object-center w-full max-w-[420px] h-32  px-1'

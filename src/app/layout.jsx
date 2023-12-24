@@ -7,7 +7,7 @@ import loading from '@/app/loading.jsx'
 import notfound from '@/app/not-found.jsx'
 
 export const metadata = {
-	title: 'server/[241]',
+	title: 'trifasicxtore',
 	description: 'Store & Services',
 }
 

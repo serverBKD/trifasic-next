@@ -53,7 +53,7 @@ export default function NavBar() {
 					href={'/'}
 					className='btn text-2xl bg-[#EFCA08] text-[#0086C2] hover:text-[#EFCA08] hover:bg-[#0086C2]'
 				>
-					server/[241]
+					trifasicxtore
 				</Link>
 			</div>
 			<div className='navbar-center hidden lg:flex'>

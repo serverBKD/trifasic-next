@@ -24,7 +24,7 @@ export default function Hero() {
 						</p>
 					</h1>
 					<h2 className='text-2xl my-3 text-[#EFCA0A]'>
-						server/[241]
+						trifasicxtore
 					</h2>
 					<p className='mb-8 leading-relaxed text-slate-200 overflow-hidden tracking-wider px-7 md:px-0'>
 						Con más de 15 años en el mercado de tecnología aplicada

@@ -10,7 +10,7 @@ export default function NavBarCart() {
 						href='/'
 						className='btn btn-ghost text-2xl font-extrabold bg-[#EFCA08] text-[#0086C2] hover:text-[#EFCA08] hover:bg-[#0086C2]'
 					>
-						nodo3{/* server/[241] */}
+						nodo3{/* trifasicxtore */}
 					</Link>
 				</div>
 				<div>

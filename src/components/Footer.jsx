@@ -186,7 +186,7 @@ export default function Footer() {
 						href={'/'}
 						className='flex title-font font-medium items-center md:justify-start justify-center text-[#EFCA0A]'
 					>
-						<span className='ml-3 text-xl'>server/[241]</span>
+						<span className='ml-3 text-xl'>trifasicxtore</span>
 					</Link>
 					<p className='text-sm text-gray-400 sm:ml-6 sm:mt-0 mt-4'>
 						<Link
