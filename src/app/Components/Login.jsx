@@ -1,5 +1,6 @@
 'use client'
 import { useForm } from 'react-hook-form'
+// import { encodeBase64 } from 'bcryptjs'
 
 export default function Login() {
 	const {
@@ -9,8 +10,19 @@ export default function Login() {
 	} = useForm({})
 
 	const onSubmit = handleSubmit(async (data) => {
-		// const { email, password } = data
-		console.log(data)
+		// const password = encodeBase64(data.password)
+		// console.log(password)
+		const response = await fetch(
+			'/api/signin',
+			{
+				method: 'POST',
+				headers: { 'content-type': 'application/json' },
+				body: JSON.stringify(data),
+			},
+			{ next: { revalidate: 0 } }
+		)
+		const result = await response.json()
+		console.log(result.FirebaseCredentials.user.stsTokenManager.accessToken)
 	})
 
 	return (
@@ -34,9 +46,12 @@ export default function Login() {
 								},
 							})}
 						/>
-						{errors.email && <span>{errors.email.message}</span>}
+						{errors.email && (
+							<span className='block text-indigo-700'>
+								{errors.email.message}
+							</span>
+						)}
 					</div>
-
 					<div className='w-full flex justify-between gap-x-3'>
 						<label htmlFor='password'>Password</label>
 						<input
