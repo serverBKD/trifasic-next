@@ -1,8 +1,12 @@
 'use client'
+import { useContext } from 'react'
 import { useForm } from 'react-hook-form'
-// import { encodeBase64 } from 'bcryptjs'
+import { generatePasswordHash } from '@/lib/jwt/bcryptjs.pass.service.js'
+import ProfileContext from '@/Context/UserContext.js'
 
 export default function Login() {
+	const { setUserProfile } = useContext(ProfileContext)
+
 	const {
 		register,
 		handleSubmit,
@@ -10,8 +14,9 @@ export default function Login() {
 	} = useForm({})
 
 	const onSubmit = handleSubmit(async (data) => {
-		// const password = encodeBase64(data.password)
-		// console.log(password)
+		const _data = await generatePasswordHash(data.password)
+		data.password = _data
+		setUserProfile(data)
 		const response = await fetch(
 			'/api/signin',
 			{
@@ -22,7 +27,10 @@ export default function Login() {
 			{ next: { revalidate: 0 } }
 		)
 		const result = await response.json()
-		console.log(result.FirebaseCredentials.user.stsTokenManager.accessToken)
+		console.log(
+			'X',
+			result.FirebaseCredentials.user.stsTokenManager.accessToken
+		)
 	})
 
 	return (
@@ -30,6 +38,7 @@ export default function Login() {
 			<div>
 				<form
 					onSubmit={onSubmit}
+					action=''
 					className='w-full flex flex-col gap-4 p-3 rounded-md shadow-lg shadow-indigo-700 bg-slate-600'
 				>
 					<h1>LOGIN</h1>
