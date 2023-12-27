@@ -40,6 +40,9 @@ dependencies:
     version: 7.49.2(react@18.2.0)
 
 devDependencies:
+  '@next/eslint-plugin-next':
+    specifier: ^14.0.4
+    version: 14.0.4
   autoprefixer:
     specifier: ^10.0.1
     version: 10.4.16(postcss@8.4.32)
