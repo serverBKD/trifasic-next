@@ -6,11 +6,7 @@
     },
     "extends": [
         "eslint:recommended",
-        "plugin:react/recommended",
-        // "plugin:prettier/recommended",
-        "plugin:react/jsx-runtime"
-        // "eslint-config-prettier"
-        // "extends: next"
+        "plugin:react/recommended"
     ],
     "overrides": [],
     "parserOptions": {
@@ -21,7 +17,8 @@
         "react"
     ],
     "rules": {
-        "react/react-in-jsx-scope": "off",
+        "react/prop-types": 0,
+        "react/react-in-jsx-scope": 0,
         "indent": [
             "error",
             "tab"

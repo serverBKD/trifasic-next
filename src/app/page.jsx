@@ -2,6 +2,7 @@ import CTAForm from '@/components/CTAForm.jsx'
 import FeatureOne from '@/components/FeatureOne.jsx'
 import Footer from '@/components/Footer.jsx'
 import Hero from '@/components/Hero.jsx'
+import _Hero from '@/components/_Hero.jsx'
 import NavBar from '@/components/NavBar.jsx'
 import NavBarCart from '@/components/NavBarCart.jsx'
 import Pricing from '@/components/Pricing.jsx'
@@ -11,8 +12,9 @@ import BrandsCard from '@/components/BrandsCard'
 
 export default function Home() {
 	return (
-		<main className='w-full min-h-screen bg-slate-900'>
+		<main>
 			<NavBar />
+			<_Hero/>
 			<Hero />
 			<NavBarCart />
 			<FeatureOne />

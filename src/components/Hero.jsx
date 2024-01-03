@@ -16,10 +16,11 @@ export default function Hero() {
 				<div className='max-w-[720px] min-w-[420px] lg:flex-grow md:w-1/2 lg:pl-24 md:pl-18 py-2 flex flex-col md:items-start md:text-left items-center text-center overflow-hidden'>
 					<h1 className='title-font text-5xl md:text-4xl mb-4 font-medium text-slate-100 flex'>
 						<p className='text-3xl'>
-							¡Técnicos con{' '}
+							¡Técnicos con{'       '}
 							<span className='bg-[#EFCA0A] text-[#0096C2] font-bold rounded-md underline px-1'>
 								Experiencia
-							</span>{' '}
+							</span>
+							{'       '}
 							en Solucionar!
 						</p>
 					</h1>
