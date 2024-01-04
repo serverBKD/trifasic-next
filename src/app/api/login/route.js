@@ -1,5 +1,3 @@
-import { NextResponse } from 'next/server'
-
 export async function GET(NextRequest, NextResponse) {
 	return NextResponse.json({'message':'hola'})
 }

@@ -68,7 +68,7 @@ export default function TableKit({ _data }) {
 					<td>HD-SG-500GB</td>
 					<td>SEAGATE {Storage}</td>
 					<td className='overflow-hidden col-span-2'>
-						Disco Duro Mecánico 3.5""
+						Disco Duro Mecánico 3.5
 					</td>
 					<td>1</td>
 					<td>45</td>

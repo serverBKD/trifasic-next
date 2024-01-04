@@ -18,17 +18,17 @@ export const authOptions = {
 		FacebookProvider({
 			clientId: process.env.FACEBOOK_ID,
 			clientSecret: process.env.FACEBOOK_SECRET
-    	})
+		})
 	],
 	theme: {
 		colorScheme: 'dark',
 	},
 	callbacks: {
-		async session({ session, token, user }) {
+		async session({ session, user }) {
 			// Store the user's profile in the session
 			session.user = user
 			return session
-    	},
+		},
 	},
 	secret: process.env.NEXTAUTH_SECRET,
 }

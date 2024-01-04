@@ -22,13 +22,11 @@ export async function SubirFiles(bytes, name) {
 	const storageRef = ref(storage,name)
 	const resp = await uploadBytes(storageRef, bytes)
 	// const download = await resp.getDownloadURL()
-	if (!resp) return response.send('Error al subir archivo')
+	if (!resp) return Response.send('Error al subir archivo')
 	
-	const URL = await getDownloadURL(storageRef)
-  				.then((url) => {
-			// Insert url into an <img> tag to "download"
-			console.log(url)
-		})
+	const URL = await getDownloadURL(storageRef).then((url) => {
+		// Insert url into an <img> tag to "download"
+		console.log(url)
+	})
 	return URL
-	
 }
