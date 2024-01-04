@@ -1,6 +1,6 @@
 'use client'
 import NavBar from '@/components/NavBar.jsx'
-import { fetchEmail } from '@/services/fetchAPI.service'
+import { fecthData } from '@/services/fetchAPI.service'
 import { useForm } from 'react-hook-form'
 export default function page() {
 	const {
@@ -12,7 +12,7 @@ export default function page() {
 	const onSubmit = handleSubmit(async (data) => {
 		// setValue('formName', 'ContactoForm')
 		const _data = { ...data, formName: 'ContactoForm' }
-		const resp = await fetchEmail(_data, '/api/listemail')
+		const resp = await fecthData(_data, '/api/listemail')
 		console.log(resp)
 	})
 
@@ -90,7 +90,7 @@ export default function page() {
 										message: 'introduce tu nombre completo',
 									},
 									maxLength: 16,
-									//TODO
+									//TODO []
 								})}
 							/>
 							{errors.fullname && (
@@ -147,7 +147,7 @@ export default function page() {
 								<span>{errors.message?.message}</span>
 							)}
 						</div>
-						<button className='text-[#0086C3] bg-[#EFCA0A] border-0 py-2 px-6 focus:outline-none hover:bg-[#0086C3] hover:text-[#EFCA0A] rounded text-lg'>
+						<button className='text-secondary-color bg-primary-color   border-0 py-2 px-6 focus:outline-none hover:bg-secondary-color hover:text-primary-color   rounded text-lg'>
 							Enviar Formulario
 						</button>
 						<p className='text-xs text-gray-400 text-opacity-90 mt-3'>

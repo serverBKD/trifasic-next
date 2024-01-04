@@ -10,7 +10,7 @@ export default function Pricing() {
 						Listos para su instalación en pocos pasos.
 					</p>
 					<div className='flex mx-auto border-2 border-blue-500 rounded overflow-hidden mt-6'>
-						<button className='py-1 px-4 bg-[#0086C3] text-white focus:outline-none'>
+						<button className='py-1 px-4 bg-secondary-color text-white focus:outline-none'>
 							Combos
 						</button>
 						<button className='py-1 px-4 text-gray-300 focus:outline-none'>
@@ -28,7 +28,7 @@ export default function Pricing() {
 								$125
 							</h1>
 							<p className='flex items-center text-gray-400 mb-2'>
-								<span className='w-4 h-4 mr-2 inline-flex items-center justify-center bg-[#0086C3] text-[#EFCA0A] rounded-full flex-shrink-0'>
+								<span className='w-4 h-4 mr-2 inline-flex items-center justify-center bg-secondary-color text-primary-color  rounded-full flex-shrink-0'>
 									<svg
 										fill='none'
 										stroke='currentColor'
@@ -44,7 +44,7 @@ export default function Pricing() {
 								Kit XVR 4CH 500GB
 							</p>
 							<p className='flex items-center text-gray-400 mb-2'>
-								<span className='w-4 h-4 mr-2 inline-flex items-center justify-center bg-[#0086C3] text-[#EFCA0A] rounded-full flex-shrink-0'>
+								<span className='w-4 h-4 mr-2 inline-flex items-center justify-center bg-secondary-color text-primary-color  rounded-full flex-shrink-0'>
 									<svg
 										fill='none'
 										stroke='currentColor'
@@ -60,7 +60,7 @@ export default function Pricing() {
 								4 Cámaras 720p Bullet o Domos
 							</p>
 							<p className='flex items-center text-gray-400 mb-6'>
-								<span className='w-4 h-4 mr-2 inline-flex items-center justify-center bg-[#0086C3] text-[#EFCA0A] rounded-full flex-shrink-0'>
+								<span className='w-4 h-4 mr-2 inline-flex items-center justify-center bg-secondary-color text-primary-color  rounded-full flex-shrink-0'>
 									<svg
 										fill='none'
 										stroke='currentColor'
@@ -95,8 +95,8 @@ export default function Pricing() {
 						</div>
 					</div>
 					<div className='p-4 xl:w-1/4 md:w-1/2 w-full'>
-						<div className='h-full p-6 rounded-lg border-2 border-[#0086C3] flex flex-col relative overflow-hidden'>
-							<span className='bg-[#0086C3] text-white px-3 py-1 tracking-widest text-xs absolute right-0 top-0 rounded-bl'>
+						<div className='h-full p-6 rounded-lg border-2 border-secondary-color flex flex-col relative overflow-hidden'>
+							<span className='bg-secondary-color text-white px-3 py-1 tracking-widest text-xs absolute right-0 top-0 rounded-bl'>
 								POPULAR
 							</span>
 							<h2 className='text-sm tracking-widest text-gray-400 title-font mb-1 font-medium'>
@@ -109,7 +109,7 @@ export default function Pricing() {
 								</span>
 							</h1>
 							<p className='flex items-center text-gray-400 mb-2'>
-								<span className='w-4 h-4 mr-2 inline-flex items-center justify-center bg-[#0086C3] text-[#EFCA0A] rounded-full flex-shrink-0'>
+								<span className='w-4 h-4 mr-2 inline-flex items-center justify-center bg-secondary-color text-primary-color  rounded-full flex-shrink-0'>
 									<svg
 										fill='none'
 										stroke='currentColor'
@@ -125,7 +125,7 @@ export default function Pricing() {
 								Kit XVR 8CH 1 TB
 							</p>
 							<p className='flex items-center text-gray-400 mb-2'>
-								<span className='w-4 h-4 mr-2 inline-flex items-center justify-center bg-[#0086C3] text-[#EFCA0A] rounded-full flex-shrink-0'>
+								<span className='w-4 h-4 mr-2 inline-flex items-center justify-center bg-secondary-color text-primary-color  rounded-full flex-shrink-0'>
 									<svg
 										fill='none'
 										stroke='currentColor'
@@ -141,7 +141,7 @@ export default function Pricing() {
 								8 Cámaras 1080p 2.8mm Bullet o Domos
 							</p>
 							<p className='flex items-center text-gray-400 mb-2'>
-								<span className='w-4 h-4 mr-2 inline-flex items-center justify-center bg-[#0086C3] text-[#EFCA0A] rounded-full flex-shrink-0'>
+								<span className='w-4 h-4 mr-2 inline-flex items-center justify-center bg-secondary-color text-primary-color  rounded-full flex-shrink-0'>
 									<svg
 										fill='none'
 										stroke='currentColor'
@@ -157,7 +157,7 @@ export default function Pricing() {
 								Incluye Accesorios + 200 mts Cable UTP
 							</p>
 							<p className='flex items-center text-gray-400 mb-6'>
-								<span className='w-4 h-4 mr-2 inline-flex items-center justify-center bg-[#0086C3] text-[#EFCA0A] rounded-full flex-shrink-0'>
+								<span className='w-4 h-4 mr-2 inline-flex items-center justify-center bg-secondary-color text-primary-color  rounded-full flex-shrink-0'>
 									<svg
 										fill='none'
 										stroke='currentColor'
@@ -172,7 +172,7 @@ export default function Pricing() {
 								</span>
 								Puedes solicitar Microfonos sin Costo adicional
 							</p>
-							<button className='flex items-center mt-auto text-[#EFCA0A] bg-[#00A6C3] border-0 py-2 px-4 w-full focus:outline-none hover:bg-[#0086C9] rounded'>
+							<button className='flex items-center mt-auto text-primary-color  bg-[#00A6C3] border-0 py-2 px-4 w-full focus:outline-none hover:bg-[#0086C9] rounded'>
 								Comprar
 								<svg
 									fill='none'
@@ -203,7 +203,7 @@ export default function Pricing() {
 								</span>
 							</h1>
 							<p className='flex items-center text-gray-400 mb-2'>
-								<span className='w-4 h-4 mr-2 inline-flex items-center justify-center bg-[#0086C3] text-[#EFCA0A] rounded-full flex-shrink-0'>
+								<span className='w-4 h-4 mr-2 inline-flex items-center justify-center bg-secondary-color text-primary-color  rounded-full flex-shrink-0'>
 									<svg
 										fill='none'
 										stroke='currentColor'
@@ -219,7 +219,7 @@ export default function Pricing() {
 								Kit XVR 8CH 1 TB
 							</p>
 							<p className='flex items-center text-gray-400 mb-2'>
-								<span className='w-4 h-4 mr-2 inline-flex items-center justify-center bg-[#0086C3] text-[#EFCA0A] rounded-full flex-shrink-0'>
+								<span className='w-4 h-4 mr-2 inline-flex items-center justify-center bg-secondary-color text-primary-color  rounded-full flex-shrink-0'>
 									<svg
 										fill='none'
 										stroke='currentColor'
@@ -235,7 +235,7 @@ export default function Pricing() {
 								8 Cámaras 5MP 2.8mm Bullet o Domos
 							</p>
 							<p className='flex items-center text-gray-400 mb-2'>
-								<span className='w-4 h-4 mr-2 inline-flex items-center justify-center bg-[#0086C3] text-[#EFCA0A] rounded-full flex-shrink-0'>
+								<span className='w-4 h-4 mr-2 inline-flex items-center justify-center bg-secondary-color text-primary-color  rounded-full flex-shrink-0'>
 									<svg
 										fill='none'
 										stroke='currentColor'
@@ -251,7 +251,7 @@ export default function Pricing() {
 								Incluye Accesorios +305 mts Cable UTP
 							</p>
 							<p className='flex items-center text-gray-400 mb-2'>
-								<span className='w-4 h-4 mr-2 inline-flex items-center justify-center bg-[#0086C3] text-[#EFCA0A] rounded-full flex-shrink-0'>
+								<span className='w-4 h-4 mr-2 inline-flex items-center justify-center bg-secondary-color text-primary-color  rounded-full flex-shrink-0'>
 									<svg
 										fill='none'
 										stroke='currentColor'
@@ -267,7 +267,7 @@ export default function Pricing() {
 								Puedes solicitar Microfonos sin Costo adicional
 							</p>
 							<p className='flex items-center text-gray-400 mb-6'>
-								<span className='w-4 h-4 mr-2 inline-flex items-center justify-center bg-[#0086C3] text-[#EFCA0A] rounded-full flex-shrink-0'>
+								<span className='w-4 h-4 mr-2 inline-flex items-center justify-center bg-secondary-color text-primary-color  rounded-full flex-shrink-0'>
 									<svg
 										fill='none'
 										stroke='currentColor'
@@ -313,7 +313,7 @@ export default function Pricing() {
 								</span>
 							</h1>
 							<p className='flex items-center text-gray-400 mb-2'>
-								<span className='w-4 h-4 mr-2 inline-flex items-center justify-center bg-[#0086C3] text-[#EFCA0A] rounded-full flex-shrink-0'>
+								<span className='w-4 h-4 mr-2 inline-flex items-center justify-center bg-secondary-color text-primary-color  rounded-full flex-shrink-0'>
 									<svg
 										fill='none'
 										stroke='currentColor'
@@ -330,7 +330,7 @@ export default function Pricing() {
 								un asesor técnico
 							</p>
 							<p className='flex items-center text-gray-400 mb-2'>
-								<span className='w-4 h-4 mr-2 inline-flex items-center justify-center bg-[#0086C3] text-[#EFCA0A] rounded-full flex-shrink-0'>
+								<span className='w-4 h-4 mr-2 inline-flex items-center justify-center bg-secondary-color text-primary-color  rounded-full flex-shrink-0'>
 									<svg
 										fill='none'
 										stroke='currentColor'
@@ -346,7 +346,7 @@ export default function Pricing() {
 								Visita técnica in situ
 							</p>
 							<p className='flex items-center text-gray-400 mb-2'>
-								<span className='w-4 h-4 mr-2 inline-flex items-center justify-center bg-[#0086C3] text-[#EFCA0A] rounded-full flex-shrink-0'>
+								<span className='w-4 h-4 mr-2 inline-flex items-center justify-center bg-secondary-color text-primary-color  rounded-full flex-shrink-0'>
 									<svg
 										fill='none'
 										stroke='currentColor'
@@ -362,7 +362,7 @@ export default function Pricing() {
 								Hasta 3 propuestas comerciales
 							</p>
 							<p className='flex items-center text-gray-400 mb-2'>
-								<span className='w-4 h-4 mr-2 inline-flex items-center justify-center bg-[#0086C3] text-[#EFCA0A] rounded-full flex-shrink-0'>
+								<span className='w-4 h-4 mr-2 inline-flex items-center justify-center bg-secondary-color text-primary-color  rounded-full flex-shrink-0'>
 									<svg
 										fill='none'
 										stroke='currentColor'
@@ -378,7 +378,7 @@ export default function Pricing() {
 								La mejor tecnología
 							</p>
 							<p className='flex items-center text-gray-400 mb-6'>
-								<span className='w-4 h-4 mr-2 inline-flex items-center justify-center bg-[#0086C3] text-[#EFCA0A] rounded-full flex-shrink-0'>
+								<span className='w-4 h-4 mr-2 inline-flex items-center justify-center bg-secondary-color text-primary-color  rounded-full flex-shrink-0'>
 									<svg
 										fill='none'
 										stroke='currentColor'

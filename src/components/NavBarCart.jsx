@@ -16,7 +16,7 @@ export default function NavBarCart() {
 				<div>
 					<Link
 						href={'/api/auth/signin'}
-						className='btn mx-1 px-3 bg-[#EFCA0A] text-[#0086C2] hover:text-[#EFCA0A] hover:bg-[#0086C3]'
+						className='btn mx-1 px-3 bg-primary-color  text-[#0086C2] hover:text-primary-color  hover:bg-[#0086C3]'
 					>
 						SignIn
 					</Link>

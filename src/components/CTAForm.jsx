@@ -47,7 +47,7 @@ export default function CTAForm() {
 							type='text'
 							id='fullname'
 							name='fullname'
-							className='w-full bg-gray-600 bg-opacity-20 focus:bg-transparent focus:ring-2 focus:ring-[#0086C3] rounded border border-gray-600 focus:border-indigo-500 text-base outline-none text-gray-100 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out'
+							className='w-full bg-gray-600 bg-opacity-20 focus:bg-transparent focus:ring-2 focus:ring-secondary-color rounded border border-gray-600 focus:border-indigo-500 text-base outline-none text-gray-100 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out'
 							{...register('fullname', {
 								required: {
 									value: true,
@@ -72,7 +72,7 @@ export default function CTAForm() {
 							type='email'
 							id='email'
 							name='email'
-							className='w-full bg-gray-600 bg-opacity-20 focus:bg-transparent focus:ring-2 focus:ring-[#0086C3] rounded border border-gray-600 focus:border-indigo-500 text-base outline-none text-gray-100 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out'
+							className='w-full bg-gray-600 bg-opacity-20 focus:bg-transparent focus:ring-2 focus:ring-secondary-color rounded border border-gray-600 focus:border-indigo-500 text-base outline-none text-gray-100 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out'
 							{...register('email', {
 								required: {
 									value: true,
@@ -98,7 +98,7 @@ export default function CTAForm() {
 							type='tel'
 							id='tel'
 							name='tel'
-							className='w-full bg-gray-600 bg-opacity-20 focus:bg-transparent focus:ring-2 focus:ring-[#0086C3] rounded border border-gray-600 focus:border-indigo-500 text-base outline-none text-gray-100 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out'
+							className='w-full bg-gray-600 bg-opacity-20 focus:bg-transparent focus:ring-2 focus:ring-secondary-color rounded border border-gray-600 focus:border-indigo-500 text-base outline-none text-gray-100 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out'
 							{...register('tel', {
 								required: {
 									value: true,
@@ -119,7 +119,7 @@ export default function CTAForm() {
 						/>
 						{errors.tel && <span>{errors.tel?.message}</span>}
 					</div>
-					<button className='bg-[#0086C3] text-[#EFCA0A] border-0 py-2 px-8 focus:outline-none hover:bg-[#EFCA0A] hover:text-[#0086C3] rounded text-lg'>
+					<button className='bg-secondary-color text-primary-color  border-0 py-2 px-8 focus:outline-none hover:bg-primary-color  hover:text-secondary-color rounded text-lg'>
 						Enviar Info
 					</button>
 					<p className='text-xs mt-3'>

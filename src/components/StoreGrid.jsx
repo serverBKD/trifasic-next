@@ -46,7 +46,7 @@ export default function StoreGrid() {
 							height={540}
 							className='w-40 h-40 p-3'
 						/>
-						<div className='px-5 rounded-b-lg bg-[#EFCA0A] '>
+						<div className='px-5 rounded-b-lg bg-primary-color  '>
 							<h3 className=''>{productSec[1].category}</h3>
 							<h2 className=''>{productSec[1].fullname}</h2>
 							<p className='my-1 text-lg '>
@@ -68,8 +68,8 @@ export default function StoreGrid() {
 							className='object-cover transition delay-75 object-center w-full max-w-[420px] h-32  px-1'
 						/>
 					</Link>
-					<div className='w-auto px-5 rounded-b-lg text-[#0086C3] '>
-						<h3 className='text-[#0086c3] tracking-widest font-bold mb-1'>
+					<div className='w-auto px-5 rounded-b-lg text-secondary-color '>
+						<h3 className='text-secondary-color tracking-widest font-bold mb-1'>
 							{productSec.category}
 						</h3>
 						<h2 className='text-md font-medium'>

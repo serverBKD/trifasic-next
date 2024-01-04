@@ -26,7 +26,7 @@ export default function login() {
 	return (
 		<section className='w-full min-h-screen bg-slate-900 grid place-content-center'>
 			<form onSubmit={handleSubmit} className='py-1 px-3 bg-slate-700'>
-				<h1 className='w-full text-center text-[#0086C3] bg-[#EFCA0A]'>
+				<h1 className='w-full text-center text-secondary-color bg-[#EFCA0A]'>
 					Login
 				</h1>
 				<div className='flex justify-between gap-x-3 my-2'>
@@ -48,7 +48,7 @@ export default function login() {
 					/>
 				</div>
 				<div className='w-full text-center my-3'>
-					<button className='w-full bg-[#0086C3] text-[#EFCA0A]'>
+					<button className='w-full bg-secondary-color text-[#EFCA0A]'>
 						Login
 					</button>
 				</div>

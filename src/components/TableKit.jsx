@@ -154,7 +154,7 @@ export default function TableKit({ _data }) {
 					</td>
 				</tr>
 				{/* <!-- TOTAL--> */}
-				<tr className='h-12 grid grid-flow-col gap-1 grid-cols-7 text-md text-[#EFCA0A] text-center bg-slate-800 px-3 items-center'>
+				<tr className='h-12 grid grid-flow-col gap-1 grid-cols-7 text-md text-primary-color  text-center bg-slate-800 px-3 items-center'>
 					<td>BKD_WORK</td>
 					<td>Total</td>
 					<td className='overflow-hidden col-span-2'>

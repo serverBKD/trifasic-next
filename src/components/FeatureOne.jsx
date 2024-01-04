@@ -5,7 +5,7 @@ export default function FeatureOne() {
 		<section className='text-gray-400 bg-slate-700 body-font'>
 			<div className='container px-5 py-24 mx-auto'>
 				<h1 className='sm:text-3xl text-2xl font-medium title-font text-center text-white mb-20'>
-					<span className='bg-[#EFCA0A] text-[#0096C2] px-3 rounded-sm font-extrabold underline'>
+					<span className='bg-primary-color  text-[#0096C2] px-3 rounded-sm font-extrabold underline'>
 						Expertos
 					</span>{' '}
 					en Solucionar

@@ -17,7 +17,7 @@ export default function Hero() {
 					<h1 className='title-font text-5xl md:text-4xl mb-4 font-medium text-slate-100 flex'>
 						<p className='text-3xl'>
 							¡Técnicos con{'       '}
-							<span className='bg-[#EFCA0A] text-[#0096C2] font-bold rounded-md underline px-1'>
+							<span className='bg-primary-color  text-[#0096C2] font-bold rounded-md underline px-1'>
 								Experiencia
 							</span>
 							{'       '}
@@ -34,7 +34,7 @@ export default function Hero() {
 						mejores productos para tu hogar, comercio o industria.
 					</p>
 					<div className='flex justify-center'>
-						<button className='w-32 inline-flex text-center text-[#0096C2] bg-[#EFCA0A] border-0 py-2 px-6 focus:outline-none hover:bg-[#0096C2] hover:text-[#EFCA0A] rounded text-lg'>
+						<button className='w-32 inline-flex text-center text-[#0096C2] bg-primary-color  border-0 py-2 px-6 focus:outline-none hover:bg-[#0096C2] hover:text-primary-color  rounded text-lg'>
 							Más Info
 						</button>
 					</div>

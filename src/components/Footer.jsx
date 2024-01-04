@@ -155,7 +155,7 @@ export default function Footer() {
 										type='text'
 										id='footer-field'
 										name='footer-field'
-										className='w-full bg-gray-800 rounded border bg-opacity-40 border-gray-700 focus:bg-transparent focus:ring-2 focus:ring-[#0086C3]  focus:border-indigo-500 text-base outline-none text-gray-100 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out'
+										className='w-full bg-gray-800 rounded border bg-opacity-40 border-gray-700 focus:bg-transparent focus:ring-2 focus:ring-secondary-color  focus:border-indigo-500 text-base outline-none text-gray-100 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out'
 										{...register('listEmail', {
 											pattern: {
 												value: /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i,
@@ -165,7 +165,7 @@ export default function Footer() {
 										})}
 									/>
 
-									<button className='lg:mt-2 xl:mt-0 flex-shrink-0 inline-flex text-white bg-[#0086C3]  border-0 py-2 px-6 focus:outline-none hover:bg-[#EFCA0A] rounded'>
+									<button className='lg:mt-2 xl:mt-0 flex-shrink-0 inline-flex text-white bg-secondary-color  border-0 py-2 px-6 focus:outline-none hover:bg-primary-color  rounded'>
 										Enviar
 									</button>
 								</div>
@@ -201,7 +201,7 @@ export default function Footer() {
 					<span className='inline-flex sm:ml-auto sm:mt-0 mt-4 justify-center sm:justify-start'>
 						<Link
 							href={'https://facebook.com/server241'}
-							className='text-[#0086C3] hover:text-[#EFCA0A]'
+							className='text-secondary-color hover:text-[#EFCA0A]'
 						>
 							<svg
 								fill='currentColor'
@@ -216,7 +216,7 @@ export default function Footer() {
 						</Link>
 						<Link
 							href={'https://www.x.com/server241'}
-							className='ml-3 text-[#0086C3] hover:text-[#EFCA0A]'
+							className='ml-3 text-secondary-color hover:text-[#EFCA0A]'
 						>
 							<svg
 								fill='currentColor'
@@ -231,7 +231,7 @@ export default function Footer() {
 						</Link>
 						<Link
 							href={'https://www.instagram.com/server241'}
-							className='ml-3 text-[#0086C3] hover:text-[#EFCA0A]'
+							className='ml-3 text-secondary-color hover:text-[#EFCA0A]'
 						>
 							<svg
 								fill='none'
@@ -255,7 +255,7 @@ export default function Footer() {
 						</Link>
 						<Link
 							href={'https://www.linkedin.com/server241'}
-							className='ml-3 text-[#0086C3] hover:text-[#EFCA0A]'
+							className='ml-3 text-secondary-color hover:text-[#EFCA0A]'
 						>
 							<svg
 								fill='currentColor'

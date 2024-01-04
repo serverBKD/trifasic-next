@@ -54,7 +54,7 @@ export default function page() {
 								})}
 							/>
 							{errors.model && (
-								<span className='bg-[#EFCA0A] text-[#0086C1] text-center text-sm italic whitespace-break-spaces'>
+								<span className='bg-primary-color  text-[#0086C1] text-center text-sm italic whitespace-break-spaces'>
 									{errors.model?.message}
 								</span>
 							)}
@@ -94,7 +94,7 @@ export default function page() {
 							})}
 						></textarea>
 						{errors.description && (
-							<span className='bg-[#EFCA0A] text-[#0086C1] text-center text-sm italic whitespace-break-spaces'>
+							<span className='bg-primary-color  text-[#0086C1] text-center text-sm italic whitespace-break-spaces'>
 								{errors.description?.message}
 							</span>
 						)}
@@ -118,7 +118,7 @@ export default function page() {
 								})}
 							/>
 							{errors.price_base && (
-								<span className='bg-[#EFCA0A] text-[#0086C1] text-center text-sm italic whitespace-break-spaces'>
+								<span className='bg-primary-color  text-[#0086C1] text-center text-sm italic whitespace-break-spaces'>
 									{errors.price_base?.message}
 								</span>
 							)}
@@ -178,7 +178,7 @@ export default function page() {
 								/>
 
 								{errors.stock && (
-									<span className='bg-[#EFCA0A] text-[#0086C1] text-center text-sm italic whitespace-break-spaces'>
+									<span className='bg-primary-color  text-[#0086C1] text-center text-sm italic whitespace-break-spaces'>
 										{errors.stock?.message}
 									</span>
 								)}
@@ -360,7 +360,7 @@ export default function page() {
 							{...register('file')}
 						/>
 					</div>
-					<button className='w-full my-3 py-2 font-bold bg-[#EFCA0A] text-[#0086C2] hover:text-[#EFCA0A] hover:bg-[#0086CA]'>
+					<button className='w-full my-3 py-2 font-bold bg-primary-color  text-[#0086C2] hover:text-primary-color  hover:bg-[#0086CA]'>
 						GUARDAR
 					</button>
 				</form>
