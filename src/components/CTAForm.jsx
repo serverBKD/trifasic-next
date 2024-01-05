@@ -119,7 +119,7 @@ export default function CTAForm() {
 						/>
 						{errors.tel && <span>{errors.tel?.message}</span>}
 					</div>
-					<button className='bg-secondary-color text-primary-color  border-0 py-2 px-8 focus:outline-none hover:bg-primary-color  hover:text-secondary-color rounded text-lg'>
+					<button className='bg-secondary-color text-primary-color border-0 py-2 px-8 focus:outline-none hover:bg-primary-color hover:text-secondary-color rounded text-lg'>
 						Enviar Info
 					</button>
 					<p className='text-xs mt-3'>
