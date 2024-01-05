@@ -8,11 +8,13 @@ import NavBarCart from '@/components/NavBarCart.jsx'
 import Pricing from '@/components/Pricing.jsx'
 import Stat from '@/components/Stat.jsx'
 import Contents from '@/components/Contents.jsx'
-import BrandsCard from '@/components/BrandsCard'
+import BrandsCard from '@/components/BrandsCard.jsx'
+import RedesSociales from '@/components/RedesSociales.jsx'
 
 export default function Home() {
 	return (
-		<main>
+		<main className="relative">
+			<RedesSociales/>
 			<NavBar />
 			<_Hero/>
 			<Hero />

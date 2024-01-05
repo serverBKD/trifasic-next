@@ -15,7 +15,7 @@ export default function RootLayout({ children }) {
 	return (
 		<html lang='en'>
 			<body
-				className={`${oswald.className} w-full min-w-[480px] min-h-screen bg-slate-100 text-white`}
+				className={`${oswald.className} w-full min-w-[480px] min-h-screen bg-slate-100 text-white `}
 			>
 				{children}
 			</body>
